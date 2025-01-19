@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeStream - Music Video Streaming</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #f1f1f1;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        header {
+            background-color: #1DB954;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: white;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .video-card {
+            background-color: #222;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .video-card:hover {
+            transform: scale(1.05);
+        }
+
+        .video-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .video-info {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .video-info h2 {
+            font-size: 1.5rem;
+        }
+
+        .video-info p {
+            color: #bbb;
+        }
+
+        .video-player {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .video-player video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-link {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1DB954;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-link:hover {
+            background-color: #17a347;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: center;
+            background-color: #1a1a1a;
+        }
+
+        footer p {
+            color: #bbb;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>VibeStream - Music Video Streaming</h1>
+    </header>
+
+    <div class="container">
+        <div class="video-grid">
+            <div class="video-card">
+                <a href="#video1">
+                    <img src="https://via.placeholder.com/300x200.png?text=Afrobeat+Jam" alt="Afrobeat Jam">
+                    <div class="video-info">
+                        <h2>Afrobeat Jam</h2>
+                        <p>DJ Munir</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="#video2">
+                    <img src="https://via.placeholder.com/300x200.png?text=Chill+Vibes" alt="Chill Vibes">
+                    <div class="video-info">
+                        <h2>Chill Vibes</h2>
+                        <p>Smooth Sounds</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="#video3">
+                    <img src="https://via.placeholder.com/300x200.png?text=Night+Groove" alt="Night Groove">
+                    <div class="video-info">
+                        <h2>Night Groove</h2>
+                        <p>Beat Master</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video-card">
+                <a href="#video4">
+                    <img src="https://via.placeholder.com/300x200.png?text=Sunny+Days" alt="Sunny Days">
+                    <div class="video-info">
+                        <h2>Sunny Days</h2>
+                        <p>Sunshine Band</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="video-player" id="video1">
+            <h2>Afrobeat Jam by DJ Munir</h2>
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <a href="#" class="back-link">Back to All Videos</a>
+        </div>
+
+        <div class="video-player" id="video2">
+            <h2>Chill Vibes by Smooth Sounds</h2>
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <a href="#" class="back-link">Back to All Videos</a>
+        </div>
+
+        <div class="video-player" id="video3">
+            <h2>Night Groove by Beat Master</h2>
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <a href="#" class="back-link">Back to All Videos</a>
+        </div>
+
+        <div class="video-player" id="video4">
+            <h2>Sunny Days by Sunshine Band</h2>
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <a href="#" class="back-link">Back to All Videos</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 VibeStream. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
